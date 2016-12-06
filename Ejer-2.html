@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ejercicio 2 de formularios I</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="Ejer-2.php"  method="POST">
+            Operando 1: <input type="text" name="oper1"/><br/>
+            Operando 2: <input type="text" name="oper2" required/><br/>
+            Seleccione operación:
+            <select name="operacion">
+                <option value="+">Suma</option>
+                <option value="-">Resta</option>
+                <option value="*">Multiplicación</option>
+                <option value=":">División</option>
+            </select>
+            <input type="submit" name="enviar" value="Enviar"/>
+        </form>
+    </body>
+</html>
