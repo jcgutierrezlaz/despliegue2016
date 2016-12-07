@@ -13,7 +13,8 @@
 
     try {
        // Conexión y establecimiento modo de errores
-       $conn = new PDO('mysql:host=localhost;dbname=gesventa;charset=utf8','dwes','dwes');
+      // $conn = new PDO('mysql:host=localhost;dbname=gesventa;charset=utf8','dwes','dwes');
+       $conn = new PDO('mysql:host=localhost;dbname='.$MYSQL_DATABASE.';charset=utf8',$MYSQL_USER, $MYSQL_PASSWORD);
        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
        // Preparación de la consulta y ejecución
