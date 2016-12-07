@@ -19,7 +19,7 @@ try
   
   $stmt->closeCursor();
 
-} catch(PDOException $e) {
+} catch(PDOException $ex) {
     print "¡Error!: " . $ex->getMessage() . "<br/>";
     exit;
 }
